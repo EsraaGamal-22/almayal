@@ -77,9 +77,14 @@ $grey_color: var(--grey_color);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
   &:hover {
-    .serviceCard__images {
-      img {
-        transform: scale(1.13);
+    .serviceCard {
+      &__images {
+        img {
+          transform: scale(1.13);
+        }
+        &--iconService {
+          background-color: $grey_color;
+        }
       }
     }
   }
@@ -99,6 +104,7 @@ $grey_color: var(--grey_color);
       object-fit: cover;
     }
     &--iconService {
+      transition: all 0.15s ease-out;
       position: relative;
       width: 70px;
       height: 70px;
@@ -108,9 +114,6 @@ $grey_color: var(--grey_color);
       border-radius: 50%;
       margin: 0 auto;
       top: -35px;
-      &:hover {
-        background-color: $grey_color;
-      }
     }
   }
   &__info {
@@ -185,6 +188,7 @@ $grey_color: var(--grey_color);
 .contactInfo {
   border-radius: 20px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 .contactForm {
   label {
