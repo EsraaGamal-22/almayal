@@ -1,444 +1,504 @@
 <!-- RTL & LTR => change this -->
 <!-- <html lang="en" dir="ltr"> -->
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon-site.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="./assets/icon-site.png" />
+    <!-- >>>>>>>> SHARED -->
+    <!-- Cairo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- >>>>>>>> SHARED -->
-  <!-- Cairo Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- animations -->
+    <link rel="stylesheet" href="./css/animations.css" />
 
-  <!-- animations -->
-  <link rel="stylesheet" href="./css/animations.css" />
+    <!-- font awesome -->
 
-  <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <!-- Shared styles-->
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
-  <!-- Shared styles-->
-  <link rel="stylesheet" href="./css/main.css" />
+    <!-- LTR style -->
+    <!-- <link rel="stylesheet" href="./css/ltr.css"> -->
+    <!-- ./ >>>>>>>> SHARED -->
+    <!-- >>>>>>>>> this page -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/about.css" />
 
-  <!-- LTR style -->
-  <!-- <link rel="stylesheet" href="./css/ltr.css"> -->
-  <!-- ./ >>>>>>>> SHARED -->
-  <!-- >>>>>>>>> this page -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/swiper.css" />
-  <link rel="stylesheet" href="./css/about.css" />
+    <!-- >>>>>>>>>>>>>>> SCRIPTS -->
+    <!--  Shared -->
+    <!-- Bootstrap -->
+    <script type="module" defer src="./js/bootstrap.min.js"></script>
+    <script type="module" defer src="./js/main.js"></script>
+    <!-- ./ Shared -->
+    <!--this page-->
+    <!-- Swiper -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"
+    ></script>
 
-  <!-- >>>>>>>>>>>>>>> SCRIPTS -->
-  <!--  Shared -->
-  <!-- Bootstrap -->
-  <script type="module" defer src="./js/bootstrap.min.js"></script>
-  <script type="module" defer src="./js/main.js"></script>
-  <!-- ./ Shared -->
-  <!--this page-->
-  <!-- Swiper -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+    <script type="module" defer src="./js/about.js"></script>
 
-  <script type="module" defer src="./js/about.js"></script>
+    <title>من نحن</title>
+    <!-- LTR title -->
+    <!-- <title>who are we</title> -->
+  </head>
 
-  <title>من نحن</title>
-  <!-- LTR title -->
-  <!-- <title>who are we</title> -->
-</head>
-
-<body class="d-flex flex-column">
-  <!--nav bar-->
-  <nav id="navbar" class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img id="logo" src="assets/logo.webp" alt="logo-image" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">من نحن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="services.html">خدماتنا
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="portfolio.html">اعمالنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html#contact">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--nav bar-->
-
-  <!-- header -->
-  <header id="header"></header>
-
-  <!--nav bar-->
-  <!-- main viewport -->
-  <!--about-->
-  <section class="mt-5 about" id="contact">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <i class="fa-solid fa-bolt icon-title"></i>
-          <h1 class="sectionTitle">من نحن</h1>
+  <body class="d-flex flex-column">
+    <!--nav bar-->
+    <nav id="navbar" class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img id="logo" src="assets/logo.webp" alt="logo-image"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >من نحن</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="services.html"
+                >خدماتنا
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="portfolio.html"
+                >اعمالنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#contact"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
         </div>
+        <a href="" class="btn d-flex justify-content-between align-items-center"
+          ><i class="fa-brands fa-whatsapp fa-xl icon-whats"></i>تحدث معنا
+        </a>
       </div>
+    </nav>
+    <!--nav bar-->
 
-      <div class="row">
-        <div class="col-12 col-md-6 about__text">
-          <h1 class="mb-5">اهلا بكم في ميال</h1>
-          <p>
-            نشــأت شــركة الميــال للمقــاولات بهــدف اعتــاء موقــع مرمــوق
-            فــي الســوق الســعودي ولتكــون شــركة رائــدة فــي مجــال
-            الأعمــال الكهربائيـة وخاصـة فـي مجـال نقـل الطاقـة و شـبكات
-            التوزيـع للجهـد المتوسـط والمخفـض وقـد عـزز مـن ذلـك التأهيـل
-            المبكـر لنـا مـع الشـركة السـعودية للكهربـاء بالعمـل كمقـاول
-            معتمـد لديهـا فـي مجـال أعمـال التوزيـع ونقـل الطاقـة . وسـاعد
-            الانتشـار الجغرافـي للشـركة فـي أنحـاء المملكـة فـي أن تأخـذ
-            الشـركة المكانـة المميـزة لهـا.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 about__assets">
-          <div class="about__assets--mainImg">
-            <img class="about__mainImg" src="assets/muertos-crew-8853536.webp" alt="image-who-1" />
-            <div class="about__miniImg">
-              <img src="assets/pexels-photo.webp" alt="image-who-2" />
-            </div>
-
-            <div class="about__dots">
-              <img src="./assets/dots.png" alt="dots" />
-            </div>
+    <!-- header -->
+    <header id="header" class="home-header">
+      <div class="container-fluid introHeader">
+        <div class="introHeader__text">
+          <h1 class="text-center mb-3">من نحن</h1>
+          <div class="introHeader__links">
+            <ul>
+              <li class="introHeader__links--home">
+                <a href="index.html"
+                  >الرئيسية
+                  <i class="p-0 m-0 fa-sharp fa-solid fa-chevron-left fa-sm"></i
+                ></a>
+              </li>
+              <li>من نحن</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--./about-->
-  <!--history-->
-  <section class="secPadd about" id="history">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <i class="fa-solid fa-bolt icon-title"></i>
-          <h1 class="sectionTitle">بداية الشركة</h1>
-        </div>
-      </div>
+    </header>
 
-      <div class="row">
-        <div class="col-12 col-md-6 historyText">
-          <p>
-            نشـأت الشـركة منـذ 1413/11/27هــ - 1993/5/19م وخـال هـذه الفتـرة
-            اسـتطعنا إثبـات جدارتنـا ومقدرتنـا مـن خــال عمــل احترافــي
-            مبنــي علــى الجــودة والســرعة. بــدأت الشــركة أعمالهــا فــي
-            مدينــة جــدة وامتــدت فروعهــا إلــى الريـاض والمدينـة المنـورة
-            ومكـة المكرمـة وينبـع و مهـد الدهـب ونسـعى للتوسـع فـي جميـع
-            أنحـاء المملكـة وخـال هـذه الفتــرة قامــت بتنفيــذ وإنشــاء
-            وتشــغيل وصيانــة مشــاريع الأعمــال الكهربائيــة الخاصــة
-            لشــبكات الجهــد العالــي والمتوسـط والمنخفـض والمسـاهمة فـي مجـال
-            التطويـر العقـاري والاسـتثمار لتحقـق بذلـك نقلـة نوعيـة فـي طريقـة
-            عملهـا مـن حيـث الحجـم و أسـلوب العمـل .
-          </p>
-        </div>
-        <div class="col-12 col-md-6 history__assets">
-          <div class="row history__assets--images">
-            <div class="col history__imgsub">
-              <img src="assets/history1.webp" alt="historyimage" />
-            </div>
-            <div class="col history__imgmain">
-              <img src="assets/history2.webp" alt="historyimage" />
-            </div>
-            <div class="history__dots--bottom">
-              <img src="./assets/begin-back.png" alt="dots" />
-            </div>
-            <div class="history__dots--top">
-              <img src="./assets/begin-back.png" alt="dots" />
-            </div>
+    <!--header-->
+    <!-- main viewport -->
+    <!--about-->
+    <section class="secPadd about" id="contact">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <i class="fa-solid fa-bolt icon-title"></i>
+            <h1 class="sectionTitle">من نحن</h1>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!--./history-->
-  <!--vision-->
-  <section class="secPadd about" id="vision">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <i class="fa-solid fa-bolt icon-title"></i>
-          <h1 class="sectionTitle">الرسالة والرؤية</h1>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12 col-md-6 message">
-          <div class="message__shapes">
-            <div class="message__icon d-flex justify-center align-items-center">
-              <i class="fa-sharp fa-regular fa-note-sticky fa-2xl"></i>
-            </div>
-          </div>
-
-          <div class="message_info pt-3 text-center">
-            <h3>الرسالة</h3>
+        <div class="row">
+          <div class="col-12 col-md-6 about__text">
+            <h1 class="mb-5">اهلا بكم في ميال</h1>
             <p>
-              مواكبــة أحــدث التقنيــات التــي تشــهدها الاعمــال
-              الكهربائيــة الخاصــة لشــبكات الجهــد العالــي والمتوســط
-              والمنخفــض والمشــاريع الفنيــة والتقنيــة علــى المســتوى
-              الوطنــي والإقليمــي والعالمــي، ويشـمل ذلـك تطويـر وتدريـب
-              وتأهيـل الكـوادر الفنيـة المؤهلـة، واسـتخدام أحـدث الأجهـزة
-              والمعـدات والآليــات التــي تضمــن تقديــم أفضــل الخدمــات
-              الفنيــة والإداريــة ومواصلــة رفــع مســتوى الأداء وفــق مــع
-              مــا تشــهده هــذه الصناعــة مــن تطــور ً معاييــر ومؤشــرات
-              قيــاس الأداء، تماشــيا
+              نشــأت شــركة الميــال للمقــاولات بهــدف اعتــاء موقــع مرمــوق
+              فــي الســوق الســعودي ولتكــون شــركة رائــدة فــي مجــال
+              الأعمــال الكهربائيـة وخاصـة فـي مجـال نقـل الطاقـة و شـبكات
+              التوزيـع للجهـد المتوسـط والمخفـض وقـد عـزز مـن ذلـك التأهيـل
+              المبكـر لنـا مـع الشـركة السـعودية للكهربـاء بالعمـل كمقـاول
+              معتمـد لديهـا فـي مجـال أعمـال التوزيـع ونقـل الطاقـة . وسـاعد
+              الانتشـار الجغرافـي للشـركة فـي أنحـاء المملكـة فـي أن تأخـذ
+              الشـركة المكانـة المميـزة لهـا.
             </p>
           </div>
-        </div>
-        <div class="col-12 col-md-6 message">
-          <div class="message__shapes">
-            <div class="message__icon d-flex justify-center align-items-center">
-              <i class="fa-sharp fa-solid fa-eye fa-2xl"></i>
+          <div class="col-12 col-md-6 about__assets">
+            <div class="about__assets--mainImg">
+              <img
+                class="about__mainImg"
+                src="assets/muertos-crew-8853536.webp"
+                alt="image-who-1"
+              />
+              <div class="about__miniImg">
+                <img src="assets/pexels-photo.webp" alt="image-who-2" />
+              </div>
+
+              <div class="about__dots">
+                <img src="./assets/dots.png" alt="dots" />
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!--./about-->
+    <!--history-->
+    <section class="secPadd about" id="history">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <i class="fa-solid fa-bolt icon-title"></i>
+            <h1 class="sectionTitle">بداية الشركة</h1>
+          </div>
+        </div>
 
-          <div class="message_info pt-3 text-center">
-            <h3>الرؤية</h3>
+        <div class="row">
+          <div class="col-12 col-md-6 historyText">
             <p>
-              نؤمـن تمامـا بضـرورة تحقيـق مسـتوى الجـودة الشـاملة والمتكاملـة
-              فـي جميـع المشـار ً يع وذلـك إيمانـا بـأن ذلـك هـو السـبيل
-              لتحقيـق النجـاح
+              نشـأت الشـركة منـذ 1413/11/27هــ - 1993/5/19م وخـال هـذه الفتـرة
+              اسـتطعنا إثبـات جدارتنـا ومقدرتنـا مـن خــال عمــل احترافــي
+              مبنــي علــى الجــودة والســرعة. بــدأت الشــركة أعمالهــا فــي
+              مدينــة جــدة وامتــدت فروعهــا إلــى الريـاض والمدينـة المنـورة
+              ومكـة المكرمـة وينبـع و مهـد الدهـب ونسـعى للتوسـع فـي جميـع
+              أنحـاء المملكـة وخـال هـذه الفتــرة قامــت بتنفيــذ وإنشــاء
+              وتشــغيل وصيانــة مشــاريع الأعمــال الكهربائيــة الخاصــة
+              لشــبكات الجهــد العالــي والمتوسـط والمنخفـض والمسـاهمة فـي مجـال
+              التطويـر العقـاري والاسـتثمار لتحقـق بذلـك نقلـة نوعيـة فـي طريقـة
+              عملهـا مـن حيـث الحجـم و أسـلوب العمـل .
             </p>
           </div>
+          <div class="col-12 col-md-6 history__assets">
+            <div class="row history__assets--images">
+              <div class="col history__imgsub">
+                <img src="assets/history1.webp" alt="historyimage" />
+              </div>
+              <div class="col history__imgmain">
+                <img src="assets/history2.webp" alt="historyimage" />
+              </div>
+              <div class="history__dots--bottom">
+                <img src="./assets/begin-back.png" alt="dots" />
+              </div>
+              <div class="history__dots--top">
+                <img src="./assets/begin-back.png" alt="dots" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--./history-->
+    <!--vision-->
+    <section class="secPadd about" id="vision">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <i class="fa-solid fa-bolt icon-title"></i>
+            <h1 class="sectionTitle">الرسالة والرؤية</h1>
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-12 col-md-6 message">
+            <div class="message__shapes">
+              <div
+                class="message__icon d-flex justify-center align-items-center"
+              >
+                <i class="fa-sharp fa-regular fa-note-sticky fa-2xl"></i>
+              </div>
+            </div>
+
+            <div class="message_info pt-3 text-center">
+              <h3 class="pb-3">الرسالة</h3>
+              <p>
+                مواكبــة أحــدث التقنيــات التــي تشــهدها الاعمــال
+                الكهربائيــة الخاصــة لشــبكات الجهــد العالــي والمتوســط
+                والمنخفــض والمشــاريع الفنيــة والتقنيــة علــى المســتوى
+                الوطنــي والإقليمــي والعالمــي، ويشـمل ذلـك تطويـر وتدريـب
+                وتأهيـل الكـوادر الفنيـة المؤهلـة، واسـتخدام أحـدث الأجهـزة
+                والمعـدات والآليــات التــي تضمــن تقديــم أفضــل الخدمــات
+                الفنيــة والإداريــة ومواصلــة رفــع مســتوى الأداء وفــق مــع
+                مــا تشــهده هــذه الصناعــة مــن تطــور ً معاييــر ومؤشــرات
+                قيــاس الأداء
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 message">
+            <div class="message__shapes">
+              <div
+                class="message__icon d-flex justify-center align-items-center"
+              >
+                <i class="fa-sharp fa-solid fa-eye fa-2xl"></i>
+              </div>
+            </div>
+
+            <div class="message_info pt-3 text-center">
+              <h3 class="pb-3">الرؤية</h3>
+              <p>
+                نؤمـن تمامـا بضـرورة تحقيـق مسـتوى الجـودة الشـاملة والمتكاملـة
+                فـي جميـع المشـار ً يع وذلـك إيمانـا بـأن ذلـك هـو السـبيل
+                لتحقيـق النجـاح
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--./vision-->
+    <!--Success Partners-->
+
+    <section class="secPadd successPartners" id="successPartners">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <i class="fa-solid fa-bolt icon-title"></i>
+            <h1 class="sectionTitle">شركاء النجاح</h1>
+          </div>
+        </div>
+        <!-- Slider -->
+        <div class="swiper-container swiper" id="partnersSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/37.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/38.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/39.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/40.png" alt="image-log" />
+              </div>
+            </div>
+
+            <!-- --------- -->
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/41.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/42.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/43.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/44.png" alt="image-log" />
+              </div>
+            </div>
+
+            <!-- --------- -->
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/45.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/46.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/47.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/48.png" alt="image-log" />
+              </div>
+            </div>
+            <!-- --------- -->
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/49.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/50.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/51.png" alt="image-log" />
+              </div>
+              <div class="successPartners__img">
+                <img src="assets/52.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/52.png" alt="image-log" />
+              </div>
+            </div>
+            <!-- --------- -->
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/53.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/54.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/55.png" alt="image-log" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="successPartners__img">
+                <img src="assets/56.png" alt="image-log" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- ./Slider -->
+      </div>
+    </section>
+    <!--./Success Partners-->
+
+    <!-- main viewport -->
+    <!-- Shared -->
+    <!--footer-->
+    <footer class="secPadd container-fluid footer-container p-5">
+      <div class="row d-flex justify-content-between">
+        <div class="col-11 col-sm-6 col-md-3 col-lg-4">
+          <div class="logo-footer mb-5">
+            <img src="assets/logo.webp" alt="image-logo" />
+          </div>
+          <span>
+            الشــركة أعمالهــا فــي مدينــة جــدة وامتــدت فروعهــا إلــى
+            الريـاض والمدينـة المنـورة ومكـة المكرمـة وينبـع و مهـد الدهـب
+            ونسـعى للتوسـع فـي جميـع أنحـاء المملكـة
+          </span>
+        </div>
+        <div class="col-11 col-sm-6 col-md-4 col-lg-3 text-center links-footer">
+          <ul>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+              <a href="about.html">من نحن</a>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+              <a href="services.html">خدماتنا</a>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+              <a href="portfolio.html"> اعمالنا</a>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-check fa-sm"></i>
+              <a href="index.html#contact"> تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-11 col-md-4 col-lg-5 titles-footer">
+          <ul>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
+              <span>النهضة وحدة رقم ٤- جدة - المملكة العربية السعودية </span>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
+              <span>0126946208</span>
+            </li>
+            <li class="mb-3">
+              <i class="fa-sharp fa-solid fa-phone fa-sm"></i>
+              <span>0126946204</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="splitter mt-5"></div>
+      <div class="centerText" id="rightsReserved">
+        الميال للمقاولات المحددوة. جميع الحقوق محفوظة
+      </div>
+    </footer>
+    <!--./footer-->
+    <button title="btn-scroll" id="btn-scroll">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+    <div id="preloader">
+      <div id="loader">
+        <div class="loader">
+          <div class="bolt one">
+            <div class="other"></div>
+          </div>
+          <div class="bolt two">
+            <div class="other"></div>
+          </div>
+          <div class="bolt three">
+            <div class="other"></div>
+          </div>
+          تحميل
         </div>
       </div>
     </div>
-  </section>
-  <!--./vision-->
-  <!--Success Partners-->
-
-  <section class="secPadd successPartners" id="successPartners">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <i class="fa-solid fa-bolt icon-title"></i>
-          <h1 class="sectionTitle">شركاء النجاح</h1>
-        </div>
-      </div>
-      <!-- Slider -->
-      <div class="swiper-container swiper" id="partnersSwiper">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/37.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/38.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/39.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/40.png" alt="image-log" />
-            </div>
-          </div>
-
-          <!-- --------- -->
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/41.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/42.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/43.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/44.png" alt="image-log" />
-            </div>
-          </div>
-
-
-
-          <!-- --------- -->
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/45.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/46.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/47.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/48.png" alt="image-log" />
-            </div>
-          </div>
-          <!-- --------- -->
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/49.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/50.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/51.png" alt="image-log" />
-            </div>
-            <div class="successPartners__img">
-              <img src="assets/52.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/52.png" alt="image-log" />
-            </div>
-          </div>
-          <!-- --------- -->
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/53.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/54.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/55.png" alt="image-log" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="successPartners__img">
-              <img src="assets/56.png" alt="image-log" />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./Slider -->
-    </div>
-  </section>
-  <!--./Success Partners-->
-
-  <!-- main viewport -->
-  <!-- Shared -->
-  <!--footer-->
-  <footer class="secPadd container-fluid footer-container p-5">
-    <div class="row d-flex justify-content-between">
-      <div class="col-11 col-sm-6 col-md-3 col-lg-4">
-        <div class="logo-footer mb-5">
-          <img src="assets/logo.webp" alt="image-logo" />
-        </div>
-        <span>
-          الشــركة أعمالهــا فــي مدينــة جــدة وامتــدت فروعهــا إلــى
-          الريـاض والمدينـة المنـورة ومكـة المكرمـة وينبـع و مهـد الدهـب
-          ونسـعى للتوسـع فـي جميـع أنحـاء المملكـة
-        </span>
-      </div>
-      <div class="col-11 col-sm-6 col-md-4 col-lg-3 text-center links-footer">
-        <ul>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-            <a href="index.html">الرئيسية</a>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-            <a href="about.html">من نحن</a>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-            <a href="services.html">خدماتنا</a>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-            <a href="portfolio.html"> اعمالنا</a>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-check fa-sm"></i>
-            <a href="index.html#contact"> تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-11 col-md-4 col-lg-5 titles-footer">
-        <ul>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-location-dot fa-sm"></i>
-            <span>النهضة وحدة رقم ٤- جدة - المملكة العربية السعودية </span>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-fax fa-sm"></i>
-            <span>0126946208</span>
-          </li>
-          <li class="mb-3">
-            <i class="fa-sharp fa-solid fa-phone fa-sm"></i>
-            <span>0126946204</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="splitter mt-5"></div>
-    <div class="centerText" id="rightsReserved">
-      الميال للمقاولات المحددوة. جميع الحقوق محفوظة
-    </div>
-  </footer>
-  <!--./footer-->
-  <button title="btn-scroll" id="btn-scroll">
-    <i class="fa-solid fa-circle-arrow-up"></i>
-  </button>
-  <div id="preloader">
-    <div id="loader">
-      <div class="loader">
-        <div class="bolt one">
-          <div class="other"></div>
-        </div>
-        <div class="bolt two">
-          <div class="other"></div>
-        </div>
-        <div class="bolt three">
-          <div class="other"></div>
-        </div>
-        تحميل
-      </div>
-    </div>
-  </div>
-  <!-- ./Shared -->
-</body>
-
+    <!-- ./Shared -->
+  </body>
 </html>

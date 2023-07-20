@@ -586,6 +586,9 @@ i.whatsapp {
   border-radius: 5px;
   background-color: $primary_hard;
 }
+.icon-whats {
+  margin-left: 0.8rem;
+}
 /*./navbar */
 
 /*swiper*/
@@ -628,7 +631,109 @@ i.whatsapp {
     color: $white_hard;
   }
 }
+//services
+.serviceCard {
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  &:hover {
+    .serviceCard {
+      &__images {
+        img {
+          transform: scale(1.13);
+        }
+        &--iconService {
+          background-color: $grey_color;
+        }
+      }
+    }
+  }
 
+  &__img {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  &__images {
+    height: 14rem;
+    position: relative;
+    img {
+      transition: all 0.15s ease-out;
+
+      height: 100%;
+      object-fit: cover;
+    }
+    &--iconService {
+      transition: all 0.15s ease-out;
+      position: relative;
+      width: 70px;
+      height: 70px;
+      border: 6px solid $white_hard;
+      background-color: #fabe56;
+      color: $white_hard;
+      border-radius: 50%;
+      margin: 0 auto;
+      top: -35px;
+    }
+  }
+  &__info {
+    padding: 3rem 1.5rem;
+    &--header {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    &--text {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+//intro header
+.home-header {
+  position: relative;
+}
+.introHeader {
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(7px);
+    position: absolute;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+  ul {
+    padding-right: 0;
+  }
+  &__links {
+    text-align: center;
+    &--home {
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary_hard;
+      }
+    }
+    li {
+      display: inline-block;
+      i {
+        vertical-align: 0;
+      }
+    }
+  }
+}
 // FOOTER
 .footer-container {
   background-color: $primary_hard;

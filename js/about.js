@@ -1,6 +1,8 @@
 import { sharedSwiperOptions } from "./helpers.js";
+import { setHeaderHeightAndMargin } from "./utilities.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  //  swiper for success partners
   new Swiper("#partnersSwiper", {
     ...sharedSwiperOptions,
     observer: true,
@@ -9,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pagination: {
       el: ".swiper-pagination",
     },
-    autoplay: false,
+    //autoplay: false,
     slidesPerView: 5,
     breakpoints: {
       320: {
@@ -30,5 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
         // spaceBetweenSlides: 50,
       },
     },
-  })
+  });
 });
