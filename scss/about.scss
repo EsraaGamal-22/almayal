@@ -3,6 +3,12 @@ $secondary_hard: var(--secondary_hard);
 $white_hard: var(--white_hard);
 $black_hard: var(--black_hard);
 $grey_color: var(--grey_color);
+// intro header
+.introHeader {
+  &::before {
+    background-image: url("../assets/about-header.webp");
+  }
+}
 // about us
 .about__text {
   background-image: url("../assets/worker.png");
@@ -118,7 +124,6 @@ $grey_color: var(--grey_color);
 
   &:hover {
     background: $secondary_hard;
-    cursor: pointer;
   }
 
   i {
@@ -129,11 +134,11 @@ $grey_color: var(--grey_color);
   }
 }
 
-.successPartners{
-  &__img{
+.successPartners {
+  &__img {
     padding: 1.3rem;
 
-    img{
+    img {
       height: auto;
     }
   }

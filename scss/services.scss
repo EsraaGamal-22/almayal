@@ -3,62 +3,10 @@ $secondary_hard: var(--secondary_hard);
 $white_hard: var(--white_hard);
 $black_hard: var(--black_hard);
 $grey_color: var(--grey_color);
-// SERVICES
 
-#servicesSwiper {
-  padding: 2rem 0.5rem;
-}
-
-.serviceCard {
-  text-align: start;
-  border-radius: 20px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  &:hover {
-    .serviceCard__images {
-      img {
-        transform: scale(1.13);
-      }
-    }
-  }
-
-  &__img {
-    overflow: hidden;
-    height: 100%;
-  }
-  &__images {
-    height: 14rem;
-    position: relative;
-    img {
-      transition: all 0.15 ease-out;
-      border-radius: 10px 10px 0 0;
-      height: 100%;
-      object-fit: cover;
-    }
-    &--iconService {
-      width: 70px;
-      height: 70px;
-      border: 6px solid $white_hard;
-      background-color: #fabe56;
-      color: $white_hard;
-      border-radius: 50%;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      &:hover {
-        background-color: $grey_color;
-      }
-    }
-  }
-  &__info {
-    padding: 3rem 1.5rem;
-    &--header {
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-    &--text {
-      font-size: 1.1rem;
-    }
+// intro header
+.introHeader {
+  &::before {
+    background-image: url("../assets/header-services.webp");
   }
 }
