@@ -121,6 +121,12 @@ h5 {
 h6 {
   font-size: 0.9rem;
 }
+ol,
+ul,
+dl {
+  padding-right: 0;
+  margin-bottom: 0;
+}
 article,
 aside,
 details,
@@ -694,29 +700,39 @@ i.whatsapp {
   position: relative;
 }
 .introHeader {
-  &::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  position: relative;
+
+  &::before,
+  &::after {
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  &::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(7px);
-    position: absolute;
+    filter: blur(4px);
+    z-index: -2;
+  }
+
+  &::after {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
   }
   &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: 900;
   }
-  ul {
-    padding-right: 0;
-  }
+
   &__links {
     text-align: center;
     &--home {
