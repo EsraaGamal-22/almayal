@@ -150,16 +150,6 @@ $grey_color: var(--grey_color);
   }
 }
 
-@media (max-width: 400px) {
-  .contactInfo__links {
-    width: 35%;
-  }
-}
-@media (min-width: 401px) and (max-width: 1000px) {
-  .contactInfo__links {
-    width: 50%;
-  }
-}
 @media (max-width: 578px) {
   .contactInfo {
     margin-bottom: 1rem;

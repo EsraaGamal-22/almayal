@@ -34,7 +34,12 @@ body {
   line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased !important;
+}
+.content_wrapper{
   overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
@@ -50,7 +55,7 @@ button,
 input,
 select,
 textarea {
-  background-color: none;
+  background-color: transparent;
   outline: 0;
   font: inherit;
 }
@@ -569,7 +574,7 @@ i.whatsapp {
   width: 100%;
   z-index: 9999;
   background: $white_hard;
-  border-bottom: 2px solid $secondary_hard;
+  border-bottom: 3.5px solid $secondary_hard;
   li {
     margin-left: 2rem;
     &:hover {
@@ -704,8 +709,9 @@ i.whatsapp {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 320px;
+  min-height: 12rem;
   position: relative;
+  color: $white_hard;
 
   &::before,
   &::after {
@@ -726,7 +732,7 @@ i.whatsapp {
   }
 
   &::after {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
   &__text {
