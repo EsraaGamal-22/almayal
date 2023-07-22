@@ -6,6 +6,8 @@ const preloader = getById("preloader")
 const rightsReserved = getById("rightsReserved")
 
 document.addEventListener("DOMContentLoaded", () => {
+  // initialize animate onScroll
+  AOS.init({ once: true })
   // set header height
   setHeaderHeightAndMargin()
 

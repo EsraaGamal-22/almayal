@@ -1,129 +1,100 @@
 <!-- RTL & LTR => change this -->
 <!-- <html lang="en" dir="ltr"> -->
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/icon-site.png" />
 
-    <!-- >>>>>>>> SHARED -->
-    <!-- Cairo Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/icon-site.png" />
 
-    <!-- animations -->
-    <link rel="stylesheet" href="./css/animations.css" />
+  <!-- >>>>>>>> SHARED -->
+  <!-- Cairo Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
 
-    <!-- font awesome -->
+  <!-- animations -->
+  <link rel="stylesheet" href="./css/animations.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- font awesome -->
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
-    <!-- Shared styles-->
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- LTR style -->
-    <!-- <link rel="stylesheet" href="./css/ltr.css"> -->
-    <!-- ./ >>>>>>>> SHARED -->
-    <!-- >>>>>>>>> this page -->
-    <link rel="stylesheet" href="./css/services.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="./css/aos.css" />
+  <!-- Shared styles-->
+  <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- >>>>>>>>>>>>>>> SCRIPTS -->
-    <!--  Shared -->
-    <!-- Bootstrap -->
-    <script type="module" defer src="./js/bootstrap.min.js"></script>
-    <script type="module" defer src="./js/main.js"></script>
-    <!-- ./ Shared -->
-    <!--this page-->
-    <title>خدماتنا</title>
-    <!-- LTR title -->
-    <!-- <title>who are we</title> -->
-  </head>
-  <body class="d-flex flex-column">
+  <!-- LTR style -->
+  <!-- <link rel="stylesheet" href="./css/ltr.css"> -->
+  <!-- ./ >>>>>>>> SHARED -->
+  <!-- >>>>>>>>> this page -->
+  <link rel="stylesheet" href="./css/services.css" />
+
+  <!-- >>>>>>>>>>>>>>> SCRIPTS -->
+  <!--  Shared -->
+  <!-- Bootstrap -->
+  <script type="module" defer src="./js/bootstrap.min.js"></script>
+  <!-- aos -->
+  <script defer src="./js/aos.js"></script>
+  <script type="module" defer src="./js/main.js"></script>
+  <!-- ./ Shared -->
+  <!--this page-->
+  <title>خدماتنا</title>
+  <!-- LTR title -->
+  <!-- <title>who are we</title> -->
+</head>
+
+<body>
+  <div class="content_wrapper">
     <!--nav bar-->
     <nav id="navbar" class="navbar navbar-expand-md">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          ><img id="logo" src="assets/logo.webp" alt="logo-image"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="index.html"><img id="logo" src="assets/logo.webp" alt="logo-image" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse navbar-default" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html"
-                >من نحن</a
-              >
+              <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="services.html"
-                >خدماتنا
+              <a class="nav-link" aria-current="page" href="./about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">خدماتنا
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="portfolio.html"
-                >اعمالنا</a
-              >
+              <a class="nav-link" aria-current="page" href="portfolio.html">اعمالنا</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html#contact"
-                >تواصل معنا</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html#contact">تواصل معنا</a>
             </li>
           </ul>
+          <a href="" class="btn d-inline-flex justify-content-between align-items-center"><i
+              class="fa-brands fa-whatsapp fa-xl icon-whats"></i>تحدث معنا
+          </a>
         </div>
-        <a href="" class="btn d-flex justify-content-between align-items-center"
-          ><i class="fa-brands fa-whatsapp fa-xl icon-whats"></i>تحدث معنا
-        </a>
       </div>
     </nav>
     <!--nav bar-->
 
     <!-- header -->
-    <header id="header" class="home-header">
-      <div class="container-fluid introHeader">
-        <div class="introHeader__text">
-          <h1 class="text-center mb-3">خدماتنا</h1>
-          <div class="introHeader__links">
-            <ul>
-              <li class="introHeader__links--home">
-                <a href="index.html"
-                  >الرئيسية
-                  <i class="p-0 m-0 fa-sharp fa-solid fa-chevron-left fa-sm"></i
-                ></a>
-              </li>
-              <li>خدماتنا</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <header id="header" class="introHeader">
+      <h1 class="text-center mb-3">خدماتنا</h1>
+      <ul class="introHeader__links">
+        <li class="introHeader__links--home">
+          <a href="index.html">الرئيسية
+            <i class="p-0 m-0 fa-sharp fa-solid fa-chevron-left fa-sm"></i></a>
+        </li>
+        <li>خدماتنا</li>
+      </ul>
     </header>
 
     <!--header-->
@@ -146,9 +117,7 @@
                   <img src="assets/drilling-work.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-oil-well fa-xl"></i>
                 </div>
               </div>
@@ -164,15 +133,10 @@
             <div class="serviceCard">
               <div class="serviceCard__images">
                 <div class="serviceCard__img">
-                  <img
-                    src="assets/replacement-light.webp"
-                    alt="service-image"
-                  />
+                  <img src="assets/replacement-light.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-dice-d20 fa-xl"></i>
                 </div>
               </div>
@@ -189,15 +153,10 @@
             <div class="serviceCard">
               <div class="serviceCard__images">
                 <div class="serviceCard__img">
-                  <img
-                    src="assets/installation-stations.webp"
-                    alt="service-image"
-                  />
+                  <img src="assets/installation-stations.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-brands fa-artstation fa-xl"></i>
                 </div>
               </div>
@@ -213,15 +172,10 @@
             <div class="serviceCard">
               <div class="serviceCard__images">
                 <div class="serviceCard__img">
-                  <img
-                    src="assets/maintenance-networks.webp"
-                    alt="service-image"
-                  />
+                  <img src="assets/maintenance-networks.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-plug-circle-bolt fa-xl"></i>
                 </div>
               </div>
@@ -240,9 +194,7 @@
                   <img src="assets/repair-network.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-screwdriver-wrench fa-xl"></i>
                 </div>
               </div>
@@ -261,9 +213,7 @@
                   <img src="assets/volt-energy.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-bolt fa-xl"></i>
                 </div>
               </div>
@@ -282,9 +232,7 @@
                   <img src="assets/nework3.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-circle-nodes fa-xl"></i>
                 </div>
               </div>
@@ -304,9 +252,7 @@
                   <img src="assets/network5.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-link fa-xl"></i>
                 </div>
               </div>
@@ -325,9 +271,7 @@
                   <img src="assets/network6.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-money-check fa-xl"></i>
                 </div>
               </div>
@@ -346,9 +290,7 @@
                   <img src="assets/volt-improve.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-tornado fa-xl"></i>
                 </div>
               </div>
@@ -369,9 +311,7 @@
                   <img src="assets/network.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-screwdriver fa-xl"></i>
                 </div>
               </div>
@@ -390,9 +330,7 @@
                   <img src="assets/networks2.webp" alt="service-image" />
                 </div>
 
-                <div
-                  class="serviceCard__images--iconService d-flex justify-content-center align-items-center"
-                >
+                <div class="serviceCard__images--iconService d-flex justify-content-center align-items-center">
                   <i class="fa-sharp fa-solid fa-toolbox fa-xl"></i>
                 </div>
               </div>
@@ -475,25 +413,28 @@
       </div>
     </footer>
     <!--./footer-->
-    <button title="btn-scroll" id="btn-scroll">
-      <i class="fa-solid fa-circle-arrow-up"></i>
-    </button>
-    <div id="preloader">
-      <div id="loader">
-        <div class="loader">
-          <div class="bolt one">
-            <div class="other"></div>
-          </div>
-          <div class="bolt two">
-            <div class="other"></div>
-          </div>
-          <div class="bolt three">
-            <div class="other"></div>
-          </div>
-          تحميل
+  </div>
+
+  <button title="btn-scroll" id="btn-scroll">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </button>
+  <div id="preloader">
+    <div id="loader">
+      <div class="loader">
+        <div class="bolt one">
+          <div class="other"></div>
         </div>
+        <div class="bolt two">
+          <div class="other"></div>
+        </div>
+        <div class="bolt three">
+          <div class="other"></div>
+        </div>
+        تحميل
       </div>
     </div>
-    <!-- ./Shared -->
-  </body>
+  </div>
+  <!-- ./Shared -->
+</body>
+
 </html>
