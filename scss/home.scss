@@ -11,9 +11,11 @@ $grey_color: var(--grey_color);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 // header
 #headerSwiper {
-  height: 100%;
+  height: 100dvh;
+  position: relative;
 }
 .video-intro {
   max-width: 100%;
@@ -91,7 +93,6 @@ $grey_color: var(--grey_color);
     }
   }
   &__links {
-    width: 25%;
     &--linkSocial {
       width: 40px;
       height: 40px;
