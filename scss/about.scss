@@ -143,6 +143,67 @@ $grey_color: var(--grey_color);
     }
   }
 }
+//founderAndMangerWords
+.wordReview {
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wordReview_title {
+  &--icon {
+    border-radius: 50%;
+    border: 2px solid $primary_hard;
+    width: 4rem;
+    height: 4rem;
+    //padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    &:hover {
+      border-color: $secondary_hard;
+    }
+    div {
+      width: 3.3rem;
+      height: 3.3rem;
+      background-color: $primary_hard;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $secondary_hard;
+      }
+      i {
+        color: $white_hard;
+      }
+    }
+  }
+
+  h5 {
+    font-weight: 900;
+  }
+}
+//documnents
+.card__img {
+  overflow: hidden;
+  height: 100%;
+  &:hover {
+    border: 2px solid $secondary_hard;
+    opacity: 0.8;
+  }
+
+  img {
+    &:hover {
+      transform: scale(1.13);
+    }
+
+    transition: all 0.15s ease-out;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 //MEDAI
 @media (max-width: 767px) {
   .about__dots {
@@ -150,3 +211,13 @@ $grey_color: var(--grey_color);
     top: unset;
   }
 }
+// @media (max-width: 787px) {
+//   .wordReview_title {
+//     width: 70%;
+//   }
+// }
+// @media (min-width: 789px) and (max-width: 1200px) {
+//   .wordReview_title {
+//     width: 90%;
+//   }
+// }

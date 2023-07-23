@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ...sharedSwiperOptions,
     observer: true,
     observeParents: true,
-    autoplay: false,
+    // autoplay: false,
     pagination: {
       el: ".swiper-pagination",
     },

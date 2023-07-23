@@ -35,7 +35,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased !important;
 }
-.content_wrapper{
+.content_wrapper {
   overflow-x: hidden;
   height: 100%;
   display: flex;
@@ -565,41 +565,90 @@ i.twitter {
 i.whatsapp {
   color: #25d366;
 }
-
-/*navbar */
-.navbar {
+//menu
+#menu-open {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 4;
+  cursor: pointer;
+  //transition: all 2s;
+  i {
+    color: $white_hard;
+  }
+}
+#navbar-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   position: fixed;
-  top: 0;
-  right: 0;
+  z-index: 4;
+  background-color: $white_hard;
   width: 100%;
-  z-index: 9999;
-  background: $white_hard;
-  border-bottom: 3.5px solid $secondary_hard;
-  li {
-    margin-left: 2rem;
-    &:hover {
-      border-radius: 5px;
-      background-color: $primary_hard;
-
-      a {
-        color: $white_hard !important;
+  right: 0;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      &.active {
+        font-weight: bold;
       }
     }
   }
 }
-.navbar-brand {
-  margin-left: 3rem !important;
-  width: 4.5rem;
+.nav-link {
+  &:hover {
+    color: $secondary_hard;
+  }
 }
+#menu-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 4;
+  cursor: pointer;
+  i {
+    color: $primary_hard;
+  }
+}
+.content_wrapper {
+  position: relative;
+}
+/*navbar */
+// .navbar {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   width: 100%;
+//   z-index: 9999;
+//   background: $white_hard;
+//   border-bottom: 3.5px solid $secondary_hard;
+//   li {
+//     margin-left: 2rem;
+//     &:hover {
+//       border-radius: 5px;
+//       background-color: $primary_hard;
 
-.active-link {
-  color: $white_hard !important;
-  border-radius: 5px;
-  background-color: $primary_hard;
-}
-.icon-whats {
-  margin-left: 0.8rem;
-}
+//       a {
+//         color: $white_hard !important;
+//       }
+//     }
+//   }
+// }
+// .navbar-brand {
+//   margin-left: 3rem !important;
+//   width: 4.5rem;
+// }
+
+// .active-link {
+//   color: $white_hard !important;
+//   border-radius: 5px;
+//   background-color: $primary_hard;
+// }
+// .icon-whats {
+//   margin-left: 0.8rem;
+// }
 /*./navbar */
 
 /*swiper*/
