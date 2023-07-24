@@ -11,7 +11,7 @@ $black_hard: var(--black_hard);
 /* ---- grid ---- */
 .card__img {
   overflow: hidden;
-  height: 100%;
+  //height: 100%;
   &:hover {
     border: 2px solid $secondary_hard;
     opacity: 0.8;
